@@ -1,0 +1,10 @@
+<body>
+  <button>Remove First</button>
+  {{#each people}}
+    {{> person }}
+  {{/each}}
+</body>
+
+<template name="person">
+  <br> {{name}}
+</template>
