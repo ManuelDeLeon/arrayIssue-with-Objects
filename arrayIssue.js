@@ -12,7 +12,6 @@ if (Meteor.isClient) {
   Template.body.events({
     'click button': function(){
       arr.splice(0, 1);
-      console.log("Array is now: " + arr.map(function (e) { return e.name }));
       dep.changed();
     }
   })
